@@ -17,5 +17,5 @@ app.get(`/products/pid`, async (req, res) => {
 });
 
 app.listen(8080, () => {
-  console.log("servidor arriba");
+  console.log("servidor arribaa");
 });
