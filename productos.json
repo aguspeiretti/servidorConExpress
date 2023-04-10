@@ -11,8 +11,24 @@
 		"title": "remera",
 		"description": "mc",
 		"thumnail": "http",
-		"code": 1234,
+		"code": 12345,
 		"stock": 3,
 		"id": 2
+	},
+	{
+		"title": "pantalon",
+		"description": "mc",
+		"thumnail": "http",
+		"code": 12346,
+		"stock": 2,
+		"id": 3
+	},
+	{
+		"title": "bermuda",
+		"description": "mc",
+		"thumnail": "http",
+		"code": 123469,
+		"stock": 2,
+		"id": 4
 	}
 ]

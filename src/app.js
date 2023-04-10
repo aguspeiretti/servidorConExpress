@@ -9,13 +9,20 @@ const productManager = new ProductManager();
 const products = productManager.getProducts();
 
 app.get(`/products/`, async (req, res) => {
-  res.send(await products);
+  const cantidadDeProductos = req.query.limit;
+  const allProducts = await products;
+  if (cantidadDeProductos) {
+    const reduced = allProducts.slice(0, cantidadDeProductos);
+    res.send(reduced);
+  } else {
+    res.send(allProducts);
+  }
 });
 
 app.get(`/products/:pid`, async (req, res) => {
   const idProducts = req.params.pid;
   const allProducts = await products;
-  const selected = allProducts.find((p) => p.id === idProducts);
+  const selected = allProducts.find((p) => p.id == idProducts);
   res.send(selected);
 });
 

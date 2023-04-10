@@ -1,5 +1,5 @@
-import ProductManager from "./managers/productManager.js";
-import UserManager from "./managers/userManager.js";
+import ProductManager from "../managers/productManager.js";
+import UserManager from "../managers/userManager.js";
 
 const productManager = new ProductManager();
 
