@@ -19,14 +19,14 @@ productManager.addProducts(p1);
 
 const userManager = new UserManager();
 
-const u1 = {
-  name: "agus",
-  lastName: "peiretti",
-  age: 34,
-  password: 123,
-  email: "agu@agu",
+const u2 = {
+  name: "juan",
+  lastName: "carlos",
+  age: 32,
+  password: 1233,
+  email: "juan@juan",
 };
 
-userManager.addUser(u1);
+userManager.addUser(u2);
 // userManager.updateUser("agu@agu", { email: "agu@gmail.com" });
 // userManager.deleteUser("agu@gmail.com");
