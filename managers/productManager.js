@@ -88,11 +88,11 @@ export default class ProductManager {
     try {
       const products = await this.getProducts();
 
-      products.splice(id - 1, 1);
+      const newProduct = products.filter((p) => p.id !== id);
 
       await fs.promises.writeFile(
         this.path,
-        JSON.stringify(products, null, "\t")
+        JSON.stringify(newProduct, null, "\t")
       );
     } catch (error) {
       console.log(error);
